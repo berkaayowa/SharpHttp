@@ -15,9 +15,7 @@ namespace ConsoleApp1
             Console.WriteLine("########################################");
             Console.WriteLine("##### Welocme to this console app ######");
             Console.WriteLine("########################################");
-            Console.WriteLine("# This console app has an Http Server  #");
-            Console.WriteLine("# Embed so that we can expose certain  #");
-            Console.WriteLine("# frunctionality to third party apps   #");
+            Console.WriteLine("#    This console app has Http Server  #");
             Console.WriteLine("########################################");
 
 

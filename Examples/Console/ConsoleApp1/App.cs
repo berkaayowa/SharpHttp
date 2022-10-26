@@ -9,11 +9,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class AppController : SharpHttpServerController 
+    public class App : SharpHttpServerController 
     {
         public SharpHttpServerResult Help()
         {
+            //returns text/string 
             return Text("In app->help function...");
+        }
+
+        public SharpHttpServerResult Version()
+        {
+            //retunrs json
+            return Json("{\"version\":\"1.0.0\"}");
+        }
+
+        public SharpHttpServerResult Configuration()
+        {
+            //retunrs XML
+            return XML("<Config><Version>1.0.0</Version><DateTime>"+DateTime.Now.ToString()+"</DateTime></Config>");
         }
 
         //Post Only fuction
