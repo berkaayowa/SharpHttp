@@ -24,6 +24,7 @@ namespace ConsoleApp1
 
             //Setup & run the Server 
             SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
+            //App.cs class is an example of a controller class and actions 
         }
 
         //This sis basic log function 
