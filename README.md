@@ -37,7 +37,7 @@ namespace ConsoleApp1
             SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
         }
 
-        //This sis basic log function 
+        //This is a basic log function 
         //We are just writing logs on console
         static void Log(SharpHttpLogSource source, SharpHttpLogType logType, object obj)
         {
