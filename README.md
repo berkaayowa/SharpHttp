@@ -1,10 +1,10 @@
 # SharpHttpServer Library
-### SharpHttpServer is a lightweight C# Library written by Berka Ayowa that helps you create a standalone Http server for in your console or windows apps
+### SharpHttpServer is a lightweight C# Library written by Berka Ayowa that helps you create a standalone HTTP server for your console or windows apps
 
 >Latest version 1.0.0
 
-To use the library, just  add the SharpHttpServer.dll reference to you c# console or windows project, they are located under Library folder
->##We recommend installing the latest library version 1.0.0 from Nuget, search SharpHttpServer from nuget and install.
+To use the library, just  add the SharpHttpServer.dll reference to your c# console or windows project, they are located under the Library folder
+>##We recommend installing the latest library version 1.0.0 from Nuget, searching SharpHttpServer from NuGet, and installing.
 >Nuget Link https://www.nuget.org/packages/SharpHttpServer
 
 ### File name: Program.cs
@@ -35,12 +35,12 @@ namespace ConsoleApp1
 
             //Setup & run the Server 
             SharpHttp.Server.Run("http://localhost:8091/", typeof(Program))
-            //Only call the fucntion AlwaysOn() if this library is being used in a console app project'
+            //Only call the function AlwaysOn() if this library is being used in a console app project'
             .AlwaysOn();
         }
 
         //This is a basic log function 
-        //We are just writing logs on console
+        //We are just writing logs on the console
         static void Log(SharpHttpLogSource source, SharpHttpLogType logType, object obj)
         {
             //Console.Clear();
@@ -113,8 +113,8 @@ namespace ConsoleApp1
 #### Action
 | Name | Description | Example | 
 | --- | --- | --- |
-| Run | This action creates & starts runing the http server| SharpHttp.Server.Run("http://localhost:8091/", typeof(Program));
-| AlwaysOn | This action cis used to keep the http server alive in console app | SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
+| Run | This action creates & starts running the HTTP server| SharpHttp.Server.Run("http://localhost:8091/", typeof(Program));
+| AlwaysOn | This action is used to keep the HTTP server alive in the console app | SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
 
 >## Sample project can be found in Example folder
 
