@@ -49,7 +49,7 @@ namespace ConsoleApp1
 }
 
 ```
-## Example of a controller
+## Example of a controller class & methods
 ### File name: App.cs
 ```html
 using SharpHttpServer.Attribute;
