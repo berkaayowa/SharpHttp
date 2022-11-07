@@ -34,7 +34,9 @@ namespace ConsoleApp1
             SharpHttp.Server.OnEvent += Log;
 
             //Setup & run the Server 
-            SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
+            SharpHttp.Server.Run("http://localhost:8091/", typeof(Program))
+            //Only call the fucntion AlwaysOn() if this library is being used in a console app project'
+            .AlwaysOn();
         }
 
         //This is a basic log function 
