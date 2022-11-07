@@ -7,7 +7,7 @@ To use the library, just  add the SharpHttpServer.dll reference to you c# consol
 >##We recommend installing the latest library version 1.0.0 from Nuget, search SharpHttpServer from nuget and install.
 >Nuget Link https://www.nuget.org/packages/SharpHttpServer
 
-###File name: Program.cs
+### File name: Program.cs
 ```html
 using SharpHttpServer.Enum;
 using System;
@@ -49,8 +49,8 @@ namespace ConsoleApp1
 }
 
 ```
-
-###File name: App.cs
+## Example of a controller
+### File name: App.cs
 ```html
 using SharpHttpServer.Attribute;
 using SharpHttpServer.Controller;
@@ -114,6 +114,6 @@ namespace ConsoleApp1
 | Run | This action creates & starts runing the http server| SharpHttp.Server.Run("http://localhost:8091/", typeof(Program));
 | AlwaysOn | This action cis used to keep the http server alive in console app | SharpHttp.Server.Run("http://localhost:8091/", typeof(Program)).AlwaysOn();
 
->#### Sample project can be found in Example folder
+>## Sample project can be found in Example folder
 
 >Click [here](https://www.paypal.com/donate/?hosted_button_id=3EUXREY22UMGQ) to donate for supporting us to keep improving this library  
